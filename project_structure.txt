@@ -1,0 +1,78 @@
+sneaker-bot-detection/
+│
+├── README.md                       # Project overview and documentation
+├── requirements.txt                # Dependencies
+├── setup.py                        # Package installation
+├── config/                         # Configuration files
+│   ├── default_config.json         # Default configuration
+│   └── production_config.json      # Production settings
+│
+├── src/                            # Source code
+│   ├── __init__.py
+│   ├── main.py                     # Entry point
+│   │
+│   ├── experts/                    # Expert models
+│   │   ├── __init__.py
+│   │   ├── base_expert.py          # Abstract base class for experts
+│   │   ├── temporal_expert.py      # Temporal Pattern Expert
+│   │   ├── input_expert.py         # Input Behavior Expert
+│   │   ├── navigation_expert.py    # Navigation Expert
+│   │   ├── technical_expert.py     # Technical Fingerprint Expert
+│   │   └── purchase_expert.py      # Purchase Pattern Expert
+│   │
+│   ├── meta/                       # Meta-learning components
+│   │   ├── __init__.py
+│   │   ├── ensemble.py             # Expert ensemble logic
+│   │   ├── weighting.py            # Dynamic expert weighting
+│   │   └── active_learning.py      # Active learning module
+│   │
+│   ├── features/                   # Feature extraction
+│   │   ├── __init__.py
+│   │   ├── temporal_features.py    # Time-based features
+│   │   ├── behavioral_features.py  # User behavior features
+│   │   └── technical_features.py   # Device/browser features
+│   │
+│   ├── evaluation/                 # Evaluation framework
+│   │   ├── __init__.py
+│   │   ├── metrics.py              # Performance metrics
+│   │   ├── visualization.py        # Result visualization
+│   │   └── benchmark.py            # Benchmarking tools
+│   │
+│   ├── data/                       # Data handling
+│   │   ├── __init__.py
+│   │   ├── synthetic.py            # Synthetic data generation
+│   │   ├── preprocessing.py        # Data preprocessing
+│   │   └── storage.py              # Data storage utils
+│   │
+│   └── utils/                      # Utility functions
+│       ├── __init__.py
+│       ├── logging.py              # Logging utilities
+│       ├── explainer.py            # Explanation generation
+│       └── visualization.py        # Visualization tools
+│
+├── api/                            # API for integration
+│   ├── __init__.py
+│   ├── routes.py                   # API endpoints
+│   ├── middleware.py               # API middleware
+│   └── validators.py               # Request validation
+│
+├── tests/                          # Test suite
+│   ├── __init__.py
+│   ├── test_temporal_expert.py
+│   ├── test_ensemble.py
+│   ├── test_synthetic_data.py
+│   └── integration_tests/
+│       ├── __init__.py
+│       └── test_full_pipeline.py
+│
+├── notebooks/                      # Jupyter notebooks
+│   ├── exploration.ipynb           # Data exploration
+│   ├── model_evaluation.ipynb      # Model evaluation
+│   └── demo.ipynb                  # Demo notebook
+│
+└── deployment/                     # Deployment configuration
+    ├── docker-compose.yml
+    ├── Dockerfile
+    └── kubernetes/
+        ├── deployment.yaml
+        └── service.yaml
