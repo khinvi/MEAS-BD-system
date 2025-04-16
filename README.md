@@ -123,9 +123,3 @@ More specific contribution guidelines will be provided as the project progresses
 ## License
 
 **MIT License**
-
----
-
-## Acknowledgements
-
-We would like to acknowledge *[Add any acknowledgements here, e.g., funding sources, collaborators, etc.]*.
