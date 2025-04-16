@@ -23,7 +23,7 @@ This repository is where we'll be sharing all our code, documentation, and resea
 
 For a deeper dive into the project's motivation, proposed methodology, and initial research questions, check out our research paper proposal:
 
-**📄 Research Paper Proposal:** *Multi-Expert AI System for Sneaker Bot Detection*
+**📄 Research Paper Proposal:** [Multi-Expert AI System for Sneaker Bot Detection](https://github.com/khinvi/MEAS-BD-system/blob/main/Research_Paper_Proposal__Multi_Expert_AI_System_for_Sneaker_Bot_Detection.pdf)
 
 ---
 
