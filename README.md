@@ -70,8 +70,8 @@ We believe that LLMs can be valuable tools in research, enabling us to explore c
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/sneaker-bot-detection.git
-cd sneaker-bot-detection
+git clone https://github.com/username/MEAS-BD-system.git
+cd MEAS-BD-system-detection
 
 # Install dependencies
 pip install -r requirements.txt
@@ -176,7 +176,7 @@ Key configuration sections:
 ## Project Structure
 
 ```
-sneaker-bot-detection/
+MEAS-BD-system/
 │
 ├── README.md                       # Project overview and documentation
 ├── requirements.txt                # Dependencies
