@@ -71,7 +71,7 @@ We believe that LLMs can be valuable tools in research, enabling us to explore c
 ```bash
 # Clone the repository
 git clone https://github.com/username/MEAS-BD-system.git
-cd MEAS-BD-system-detection
+cd MEAS-BD-system
 
 # Install dependencies
 pip install -r requirements.txt
