@@ -220,7 +220,7 @@ This proof of concept provides a solid foundation that you can extend:
 
 ## Next Steps
 
-To make this system production-ready, consider:
+To make this system production-ready, we will need to consider:
 
 1. **Performance Optimization**: Profile and optimize performance-critical parts
 2. **Integration Tests**: Create comprehensive tests for real-world scenarios
