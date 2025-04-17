@@ -1,0 +1,88 @@
+{
+    "system": {
+      "name": "MEAS-BD",
+      "version": "0.1.0",
+      "log_level": "WARNING"
+    },
+    "experts": {
+      "temporal_expert": {
+        "enabled": true,
+        "model_type": "lstm",
+        "hidden_size": 128,
+        "num_layers": 3,
+        "dropout": 0.3,
+        "learning_rate": 0.0005
+      },
+      "navigation_expert": {
+        "enabled": true,
+        "model_type": "transformer",
+        "embedding_dim": 256,
+        "num_heads": 8,
+        "num_layers": 4,
+        "dropout": 0.2,
+        "learning_rate": 0.0003
+      },
+      "input_expert": {
+        "enabled": true,
+        "model_type": "cnn",
+        "features": ["mouse_movement", "click_patterns", "scroll_behavior", "keystroke_dynamics"],
+        "conv_layers": 4,
+        "filters": [64, 128, 256, 512],
+        "learning_rate": 0.0004
+      },
+      "technical_expert": {
+        "enabled": true,
+        "model_type": "random_forest",
+        "features": ["browser_fingerprint", "headers", "canvas_fingerprint", "webrtc_info"],
+        "n_estimators": 500,
+        "max_depth": 20,
+        "min_samples_split": 5
+      },
+      "purchase_expert": {
+        "enabled": true,
+        "model_type": "gradient_boosting",
+        "features": ["checkout_speed", "payment_pattern", "shipping_info", "product_selection"],
+        "n_estimators": 300,
+        "learning_rate": 0.03,
+        "max_depth": 10
+      }
+    },
+    "meta_learning": {
+      "ensemble_method": "stacking",
+      "weighting_strategy": "dynamic",
+      "confidence_threshold": 0.8,
+      "learning_rate": 0.0005,
+      "batch_size": 128,
+      "epochs": 50
+    },
+    "data": {
+      "synthetic_data": {
+        "enabled": false
+      },
+      "storage": {
+        "type": "postgresql",
+        "host": "db.example.com",
+        "port": 5432,
+        "username": "${DB_USERNAME}",
+        "password": "${DB_PASSWORD}",
+        "database": "bot_detection"
+      },
+      "preprocessing": {
+        "normalization": "standard",
+        "handle_missing": "impute",
+        "feature_selection": "auto"
+      }
+    },
+    "api": {
+      "host": "0.0.0.0",
+      "port": 8000,
+      "workers": 8,
+      "rate_limit": 500,
+      "timeout": 15
+    },
+    "evaluation": {
+      "metrics": ["accuracy", "precision", "recall", "f1", "auc"],
+      "cross_validation_folds": 5,
+      "test_size": 0.2
+    }
+  }
