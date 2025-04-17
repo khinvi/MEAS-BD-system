@@ -23,7 +23,7 @@ MEAS-BD employs a specialized mixture-of-experts approach to identify sneaker bo
 - **Technical Fingerprint Expert (TFE)**: Analyzes device and browser characteristics
 - **Purchase Pattern Expert (PPE)**: Identifies suspicious checkout and purchasing behaviors
 
-For now, these are the experts we are tinkering with, however, we are open to employing others _(the more the merrier...)_ A meta-learning layer dynamically weights expert opinions based on context and confidence, allowing the system to adapt to new bot strategies without complete retraining.
+A meta-learning layer dynamically weights expert opinions based on context and confidence, allowing the system to adapt to new bot strategies without complete retraining. For now, these are the five experts we are tinkering with, however, we are open to employing others in the future _(the more the merrier...)_
 
 ## Read More
 
