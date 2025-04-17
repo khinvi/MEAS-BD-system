@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Multi-Expert AI System for Sneaker Bot Detection (MEAS-BD)** project is really about tackling a growing problem: **sneaker bots**. These automated programs are designed to snag super-limited-edition sneakers online which leave many genuine enthusiasts empty-handed, hurting brand reputation in the process. We're exploring whether a **Mixture-of-Experts (MoE)** architecture can help us detect and classify this bot traffic.
+The **Multi-Expert AI System for Sneaker Bot Detection (MEAS-BD)** project is really about tackling a growing problem: **sneaker bots**. These automated programs are designed to snag super-limited-edition sneakers online which leave actual "sneaker-heads" empty-handed, hurting brand reputation in the process. We're exploring whether a **Mixture-of-Experts (MoE)** architecture can help us detect and classify this bot traffic.
 
 Essentially, we're trying to:
 
